@@ -19,5 +19,8 @@ var comment = "";
 $("#add-user").on("click", function() {
   event.preventDefault();
 
-  
+  name = $("#name-input").val().trim();
+  email = $("#email-input").val().trim();
+  age = $("#age-input").val().trim();
+  comment = $("#comment-input").val().trim();
 });

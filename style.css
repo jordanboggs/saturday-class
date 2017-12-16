@@ -366,7 +366,8 @@ body {
 
 /* Overall layout */
 body {
-  background-image: url("../images/noisy_grid.png"); }
+}
+  /* background-image: url("../images/noisy_grid.png"); } */
 
 .wrapper {
   margin: 0 auto;

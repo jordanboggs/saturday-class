@@ -365,8 +365,13 @@ body {
   color: #444; }
 
 /* Overall layout */
+<<<<<<< HEAD
 /* body {
   background-image: url("../images/noisy_grid.png"); } */
+=======
+body {
+  margin:0; }
+>>>>>>> 7f9f1462aa7f80e45736b8606e77b81ea396956f
 
 .wrapper {
   margin: 0 auto;

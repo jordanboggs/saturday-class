@@ -366,7 +366,7 @@ body {
 
 /* Overall layout */
 body {
-  background-image: url("../images/noisy_grid.png"); }
+  margin:0; }
 
 .wrapper {
   margin: 0 auto;

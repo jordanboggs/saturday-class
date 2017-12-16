@@ -10,36 +10,31 @@
 <body>
   <div class="wrapper">
     <header id='title'>
-      <h1>Train Tracker!</h1>
-      <h2>Track those trains without using your brains</h2>
+      <h1>Employees!</h1>
     </header>
     <section>
-      <table id="train-table">
-        <caption>Current Train Schedule</caption>
+      <table id="employee-table">
+        <caption>Employee Data</caption>
         <tr>
-          <th>Train Name</th>
-          <th>Destination</th>
-          <th>Frequency (min)</th>
-          <th>Next Arrival</th>
-          <th>Minutes Away</th>
+          <th>Employee</th>
+          <th>Employee Email</th>
+          <th>Months of Employment</th>
+          <th>Monthly Pay</th>
+          <th>Pay to Date</th>
         </tr>
       </table>
     </section>
     <aside>
-      <form id="add-train">
-        <legend>Add Train</legend>
-        <label for="train-name">Train Name</label><br/>
-        <input id="train-name" type="text" name="train-name"><br/>
-        <label for="destination">Destination</label><br>
-        <input id="destination" type="text" name="destination"><br>
-        <label for="first-train-time">
-          First Train Time (HH:mm&mdash;Military time)
-        </label><br>
-        <input id="first-train-time" type="text" name="first-train-time"><br>
-        <label for="frequency">
-          Frequency (min)
-        </label><br>
-        <input id="frequency" type="number" name="frequency"><br>
+      <form id="add-employee">
+        <legend>Add Employee</legend>
+        <label for="name-input">Employee Name</label><br/>
+        <input id="name-input" type="text" name="name-input"><br/>
+        <label for="email-input">Employee Email</label><br>
+        <input type="text" id="email-input" name="email-input"><br>
+        <label for="months-input">Months of Employment</label><br>
+        <input type="number" id="email-input" name="email-input"><br>
+        <label for="pay-input">Monthly Pay</label><br>
+        <input type="number" id="pay-input" name="pay-input"><br>
         <input id="submit-button" class="button" type="submit" value="Submit">
       </form>
     </aside>

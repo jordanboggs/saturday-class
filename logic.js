@@ -13,16 +13,16 @@ var ref = firebase.database().ref();
 
 var name = "";
 var email = "";
-var age = 0;
-var comment = "";
+var monthsEmployment = 0;
+var monthlyPay = "";
 
 $("#add-user").on("click", function() {
   event.preventDefault();
 
   name = $("#name-input").val().trim();
   email = $("#email-input").val().trim();
-  age = $("#age-input").val().trim();
-  comment = $("#comment-input").val().trim();
+  monthsEmployment = $("#months-input").val().trim();
+  monthlyPay = $("#pay-input").val().trim();
 
   // We need to push these to Firebase
 });

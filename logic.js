@@ -16,15 +16,23 @@ var email = "";
 var monthsEmployment = 0;
 var monthlyPay = "";
 
-$("#add-user").on("click", function() {
+$("#submit").on("click", function() {
   event.preventDefault();
 
   name = $("#name-input").val().trim();
   email = $("#email-input").val().trim();
-  monthsEmployment = $("#months-input").val().trim();
+  monthsEmployment = parseInt($("#months-input").val().trim());
   monthlyPay = $("#pay-input").val().trim();
 
+  var newRef = ref.push();
   // We need to push these to Firebase
+  newRef.set({
+    "name": name,
+    "email": email,
+    "monthsEmployment": monthsEmployment,
+    "monthlyPay": monthlyPay,
+    "payToDate": monthsEmployment * monthlyPay
+  });
 });
 
 // instead of .on("value") with .push() (rather than with .set())
@@ -32,5 +40,5 @@ ref.on("child_added", function () {
   // it will invoke the callback and pass in a snapshot of that child
 
   // Update the html
-  $("#name-display").text(snapshot.val().name);
+  // $("#name-display").text(snapshot.val().name);
 });

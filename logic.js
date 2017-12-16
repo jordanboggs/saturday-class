@@ -25,7 +25,7 @@ $("#add-user").on("click", function() {
   monthlyPay = $("#pay-input").val().trim();
 
   // We need to push these to Firebase
-});
+
 
 // instead of .on("value") with .push() (rather than with .set())
 ref.on("child_added", function () {

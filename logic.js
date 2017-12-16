@@ -36,9 +36,15 @@ $("#submit").on("click", function() {
 });
 
 // instead of .on("value") with .push() (rather than with .set())
-ref.on("child_added", function () {
+ref.on("child_added", function (snapshot) {
   // it will invoke the callback and pass in a snapshot of that child
+  let newChild = snapshot.val();
+  let nameDisplay = newChild.name;
+  let emailDisplay = newChild.email;
+  let monthsEmploymentDisplay = newChild.monthsEmployment;
+  let monthlyPayDisplay = newChild.monthlyPay;
+  let payToDateDisplay = newChild.payToDate;
 
   // Update the html
-  // $("#name-display").text(snapshot.val().name);
+  
 });

@@ -24,3 +24,11 @@ $("#add-user").on("click", function() {
   age = $("#age-input").val().trim();
   comment = $("#comment-input").val().trim();
 });
+
+// instead of .on("value") with .push() (rather than with .set())
+ref.on("child_added", function () {
+  // it will invoke the callback and pass in a snapshot of that child
+
+  // Update the html
+  $("#name-display").text(snapshot.val().name);
+});
